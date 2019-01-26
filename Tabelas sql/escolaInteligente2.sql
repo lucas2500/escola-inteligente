@@ -1,0 +1,36 @@
+CREATE TABLE usuarios(
+
+	nome VARCHAR(100),
+	email VARCHAR(30),
+	matricula VARCHAR(80),
+	senha VARCHAR(250)
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+SET SQL_SAFE_UPDATES = 0;
+
+CREATE TABLE mensagem(
+
+	usuario VARCHAR(100),
+	destinatario VARCHAR(10),
+	mensagem LONGTEXT,
+	dataEnvio VARCHAR(50),
+	ID INT PRIMARY KEY AUTO_INCREMENT
+);
+
+
+CREATE TABLE aviso(
+
+	usuario VARCHAR(100),
+	aviso LONGTEXT,
+	dataEnvio VARCHAR(50),
+	dest VARCHAR(20),
+	ID INT PRIMARY KEY AUTO_INCREMENT
+);
+
+
+
+
+
+
+
+
